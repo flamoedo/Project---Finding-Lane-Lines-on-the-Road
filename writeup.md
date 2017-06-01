@@ -13,7 +13,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./test_images/grayscale.jpg "Grayscale"
+![image1](/test_images/grayscale.jpg)
 
 ---
 
@@ -39,13 +39,13 @@ previous frame, as a way to estabilizate the image.
 I used the separate_lines function to eliminate low slopes lines, so I managed to run the challenge part 
 of the project.
 
-[image2]: ./test_images/grayscale.jpg "Grayscale"
+![image2](/test_images/grayscale.jpg) "Grayscale"
 
-[image3]: ./test_images/image_canny.jpg "Canny"
+![image3](/test_images/image_canny.jpg) "Canny"
 
-[image4]: ./test_images/mask.jpg "Mask"
+![image4](/test_images/mask.jpg) "Mask"
 
-[image5]: ./test_images/draw_lines.jpg "Lines Detected"
+![image5](/test_images/draw_lines.jpg) "Lines Detected"
 
 
 ### 2. Identify potential shortcomings with your current pipeline
