@@ -32,6 +32,12 @@ My pipeline consisted of 8 steps.
 7) Calculate the average line, to draw a single line in each side.
 8) Exptend the lines to roi limits.
 
+The draw_lines function was modified to separate left and right lines, get the average line,
+extrapolate the lines to roi, and with a buffer that replace missing lines with ones of the 
+previous frame, as a way to estabilizate the image.
+
+I used the separate_lines function to eliminate low slopes lines, so I managed to run the challenge part 
+of the project.
 
 [image2]: /test_images/grayscale.jpg "Grayscale"
 
@@ -46,7 +52,7 @@ My pipeline consisted of 8 steps.
 
 One potential shortcoming would be the lost of lines due to some shadow over the road,
 or fadding lines.
-Another shortcoming would be at night or under any weather condition that may dificult the vivibility.
+Another shortcoming would be at night or under any weather condition that may dificult the visibility.
 
 
 ### 3. Suggest possible improvements to your pipeline
