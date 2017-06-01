@@ -13,7 +13,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: /test_images/grayscale.jpg "Grayscale"
+[image1]: ./test_images/grayscale.jpg "Grayscale"
 
 ---
 
@@ -28,7 +28,7 @@ My pipeline consisted of 8 steps.
 3) Apply canny edge filter. 
 4) Mask the region of interest, to avoid interferences,
 5) Hough transformation used to detect lines.
-6) Separation of the reight and left lines.
+6) Separation of the right and left lines.
 7) Calculate the average line, to draw a single line in each side.
 8) Exptend the lines to roi limits.
 
@@ -39,19 +39,19 @@ previous frame, as a way to estabilizate the image.
 I used the separate_lines function to eliminate low slopes lines, so I managed to run the challenge part 
 of the project.
 
-[image2]: /test_images/grayscale.jpg "Grayscale"
+[image2]: ./test_images/grayscale.jpg "Grayscale"
 
-[image3]: /test_images/image_canny.jpg "Canny"
+[image3]: ./test_images/image_canny.jpg "Canny"
 
-[image4]: /test_images/mask.jpg "Mask"
+[image4]: ./test_images/mask.jpg "Mask"
 
-[image5]: /test_images/draw_lines.jpg "Lines Detected"
+[image5]: ./test_images/draw_lines.jpg "Lines Detected"
 
 
 ### 2. Identify potential shortcomings with your current pipeline
 
 One potential shortcoming would be the lost of lines due to some shadow over the road,
-or fadding lines.
+or fading lines.
 Another shortcoming would be at night or under any weather condition that may dificult the visibility.
 
 
