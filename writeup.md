@@ -1,8 +1,6 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
+## Writeup
 
 ---
 
@@ -15,7 +13,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: /test_images/grayscale.jpg "Grayscale"
 
 ---
 
@@ -35,24 +33,22 @@ My pipeline consisted of 8 steps.
 8) Exptend the lines to roi limits.
 
 
-[image2]: ./test_images/grayscale.jpg "Grayscale"
+[image2]: /test_images/grayscale.jpg "Grayscale"
 
-[image3]: ./test_images/image_canny.jpg "Grayscale"
+[image3]: /test_images/image_canny.jpg "Canny"
 
-[image4]: ./test_images/mask.jpg "Grayscale"
+[image4]: /test_images/mask.jpg "Mask"
 
-[image5]: ./test_images/draw_lines.jpg "Grayscale"
+[image5]: /test_images/draw_lines.jpg "Lines Detected"
 
 
 ### 2. Identify potential shortcomings with your current pipeline
 
-
-One potential shortcoming would be the lost of straignt lines, that are necessary to Hough transformation, on curved road.
-At night or under any weather condition that may harm the vivibility.
+One potential shortcoming would be the lost of lines due to some shadow over the road,
+or fadding lines.
+Another shortcoming would be at night or under any weather condition that may dificult the vivibility.
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to take the average of lines among frames, this would estabilizate the lines.
-
-Use another tipe of transformation to detect curves, and not only straight lines.
+Trying to detect other colors instead of gray scale, would help to detect some fading lines.
